@@ -1,0 +1,296 @@
+ body{
+    font-family: "Lato", sans-serif;
+}
+
+.text-center h1{
+    color: rgb(74, 155, 248);;
+}
+
+.main {
+    margin-top: 50px;
+    margin: auto;
+    padding: 0px 10px;
+}
+/************************Button*****************************/
+.button {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 255, 0.664);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+  }
+
+  .buttoncat {
+    border-radius: 4px;
+    background-color: rgba(255, 0, 0, 0.719);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+  }
+
+  .buttonuser {
+    border-radius: 4px;
+    background-color: rgba(0, 128, 0, 0.719);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .buttoncat span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .buttonuser span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .buttoncat span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .buttonuser span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .buttoncat:hover span {
+    padding-right: 25px;
+  }
+
+  .buttonuser:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .buttoncat:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .buttonuser:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button a{
+      color: white;
+      text-decoration: none;
+      
+  }
+
+  .buttoncat a{
+    color: white;
+    text-decoration: none;
+    
+}
+.buttonuser a{
+  color: white;
+  text-decoration: none;
+}
+
+.panel-infos{
+  width: 50%;
+  display: none;
+}
+
+
+
+/*****************************Formulaire d'ajout *******************************/
+
+.container{
+
+  background:rgb(74, 155, 248);;
+  width: 25%;
+  height: 400px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 20px;
+}
+
+
+input[type=text]{
+   border-radius: 5px;
+   margin: auto;
+   width: 20%;
+   margin-top: 40px;
+}
+
+input[type=password]{
+  border-radius: 5px;
+  margin: auto;
+  width: 20%;
+  margin-top: 20px;
+}
+
+input[type=number]{
+  border-radius: 5px;
+  margin: auto;
+  width: 20%;
+  margin-top: 20px;
+}
+
+input[type=file]{
+  border-radius: 5px;
+  margin: auto;
+  width: 20%;
+  margin-top: 10px;
+}
+
+input[type=submit]{
+   border-radius: 5px;
+   margin: auto;
+   background: rgb(74, 155, 248);;
+   width: 20%;
+   margin-top: 40px;
+}
+
+.btn-basic{
+   width: 70%;
+   border-radius: 10px;
+}
+
+label{
+  color: blue;
+  margin-top:30px;
+}
+
+::placeholder{
+  font-style: italic;
+}
+
+h2{
+  color: rgb(74, 155, 248);;
+  margin-top: 0px;
+}
+
+.btnd button.btn-primary{
+  width: 20%;
+  margin-top: 30px;
+}
+
+.btnd button.btn-warning{
+  width: 20%;
+  margin-top: 30px;
+}
+
+.btnd button.btn-success{
+  width: 20%;
+  margin-top: 30px;
+}
+
+
+#descid{
+  height: auto;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+select{
+  margin-top: 20px;
+  width: 20%;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.alert-warning{
+  width: 50%;
+  margin: auto;
+  text-size-adjust: 25px;
+}
+
+
+.alert-success{
+   width: 20%;
+   margin-top: 20px;
+   margin: auto;
+}
+
+.alert-danger{
+  width: 20%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+
+/*************************************Modifier ou Supprimer*************************************/
+
+.btnmodel button.btn-danger a {
+   text-decoration: none;
+   color: white;
+}
+
+.btnmodel button.btn-warning a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+

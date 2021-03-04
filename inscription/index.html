@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/moncss.css">
+</head>
+<body>
+    
+ <div class="containercon">
+        <div class="buttonc">
+           <button class="btn"><i class="fa fa-twitter"></i> Gestionnaire </button>
+        </div>
+        <div class="panel panel-body">     
+        </div>
+      <div class="formconnexion">
+            <input type="text" name="username" id="nomuser" class="form-control" placeholder="Nom d'utilisateur" minlength="5" required> <br>
+            <input type="number" name="usertel" id="numerouser" class="form-control" placeholder="Numero" minlength="8" required> <br>
+            <input type="password" name="userpassword" id="passuser" class="form-control" placeholder="mot de passe" minlength="8" required> <br>
+            <input type="password" name="userpasswordconfirm" id="confirmuser" class="form-control" placeholder="Confirmez le mot de passe" minlength="8" required> <br>
+            <a href=""> mot de passe oublié? </a><br><br>
+            <div class="buttoncon">
+               <button class="btn btn-primary" id="save" name="insciprtion" ><b>s'inscrire</b></button>
+            </div> 
+     </div> <br><br><br>
+      <a href="../connection/"> <b> Vous avez deja un compte ? Connectez-vous </b> </a> <br>
+
+      <div id="message">
+      </div>
+
+      <script>
+           
+         $(document).ready(function(){
+            $("#save").click(function(){
+                var nom = $("#nomuser").val();
+                var num = $("#numerouser").val();
+                var motp = $("#passuser").val();
+                var confirm = $("#confirmuser").val();
+                $.ajax({
+                    url:"../serveur/index.php",
+                    type:"post",
+                    async:false,
+                    data: {
+                        "inscription":1,
+                        "nom":nom,
+                        "num":num,
+                        "pass":motp,
+                        "conf":confirm
+                    },
+                    success:function(data){
+                    $("#nomuser").val(nom);
+                    $("#numerouser").val(num);
+                    $("#motuser").val(motp);
+                    $("#confirmuser").val(confirm);
+                    $("#message").html(data);
+                  }
+                });
+            });
+              
+         });
+     </script>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.containeradmin{
+
+    background:rgb(74, 155, 248);
+    width: 25%;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 20px;
+ }
+ 
+ input[type=text]{
+     border-radius: 5px;
+     width: 70%;
+     bottom: 50px;
+
+ }
+ 
+ input[type=password]{
+     border-radius: 5px;
+     margin: auto;
+     width: 70%;
+     margin-top: 100px;
+ }
+ 
+ input[type=submit]{
+     border-radius: 5px;
+     margin: auto;
+     width: 70%;
+     margin-top: 40px;
+ }

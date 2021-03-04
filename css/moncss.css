@@ -1,0 +1,68 @@
+
+/*=========================================================
+	1 -> Welcome jumbotron
+===========================================================*/
+.container{
+    margin-top: 150px;
+}
+
+.btn{
+    width: 100%;
+}
+
+.btn-primary{
+    width: 20%;
+    margin-top: 20px;
+}
+
+
+/*=========================================================
+	2 ->Connexion Inscripion
+===========================================================*/
+
+.containercon{
+    margin:auto;
+    width: 20%;
+    margin-top: 180px;
+  }
+  
+  .buttonc button.btn {
+    background: rgb(74, 155, 248);
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .buttoncon{
+    width: 100%;
+  }
+  
+  .buttoncon button.btn-primary{
+    background: rgb(74, 155, 248);
+    float: right;
+    width: 100%;
+  }
+  
+  .formconnexion a{
+    color:rgb(74, 155, 248);;
+    float: right;
+  }
+
+  
+  .containercon a{
+    color:rgb(74, 155, 248);;
+    text-align: center;
+  }
+  
+  #message{
+    width: 100%;
+  }
+
+  .alert-danger{
+    width: 100%;
+    margin: auto;
+  }
+
+
+
